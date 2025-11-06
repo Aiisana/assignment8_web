@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Douce — Контакты</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style_contact.css">
+</head>
+
+<body>
+
+  <!-- Навигация -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Maison Douce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Контент -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        
+        <!-- Левая часть — контакты -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <h2 class="fw-bold mb-4">Контакты Maison Douce</h2>
+
+          <div class="mb-4">
+            <h5 class="fw-semibold">Париж</h5>
+            <p class="text-muted mb-1">Rue Saint-Honoré 12</p>
+            <p class="text-muted small">+33 1 44 55 77 88</p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="fw-semibold">Алматы</h5>
+            <p class="text-muted mb-1">Абылай Хана 45</p>
+            <p class="text-muted small">+7 707 555 88 99</p>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="fw-semibold">Токио</h5>
+            <p class="text-muted mb-1">Omotesando Hills 3F</p>
+            <p class="text-muted small">+81 3 1234 5678</p>
+          </div>
+
+          <hr>
+          <p class="text-muted small mb-1"><strong>Email:</strong> info@maisondouce.com</p>
+          <p class="text-muted small"><strong>Часы работы:</strong> Пн–Сб 09:00–20:00 | Вс 10:00–18:00</p>
+        </div>
+
+        <!-- Правая часть — форма -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <h2 class="fw-bold mb-4">Свяжитесь с нами</h2>
+
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" id="name" class="form-control" placeholder="Ваше имя">
+              <div class="invalid-feedback">Введите имя (минимум 2 символа)</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="example@mail.com">
+              <div class="invalid-feedback">Введите корректный email</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Сообщение</label>
+              <textarea id="message" rows="5" class="form-control" placeholder="Ваше сообщение..."></textarea>
+              <div class="invalid-feedback">Введите сообщение (минимум 10 символов)</div>
+            </div>
+
+            <button type="submit" class="btn btn-dark px-4 py-2 mt-2">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Карта -->
+  <section class="map-section mt-5">
+    <div id="map"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-white border-top mt-5">
+    <p class="mb-0">&copy; 2025 Maison Douce — Искусство кондитерского мастерства</p>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Карта Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script src="script_contact.js"></script>
+</body>
+</html>

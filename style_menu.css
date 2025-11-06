@@ -1,0 +1,151 @@
+/* ========== ОСНОВНЫЕ СТИЛИ ДЛЯ МЕНЮ ========== */
+body {
+  font-family: 'Lato', sans-serif;
+  margin-top: 90px; /* отступ под фиксированный navbar */
+  background-color: #fff;
+  overflow-x: hidden; /* убираем горизонтальный скролл */
+}
+
+/* ========== HERO-СЕКЦИЯ ========== */
+.menu-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Изображение в hero */
+.menu-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(90%);
+}
+
+/* Градиентное затемнение снизу */
+.menu-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Текст на hero */
+.menu-banner-content {
+  position: absolute;
+  bottom: 15%;
+  left: 8%;
+  color: #fff;
+  z-index: 2;
+  max-width: 600px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  animation: fadeUp 1.2s ease;
+}
+
+.menu-banner-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.menu-banner-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Анимация появления текста */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== КАРТОЧКИ ТОВАРОВ ========== */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ========== КНОПКИ ========== */
+.btn-dark,
+.btn-outline-dark {
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #222;
+}
+
+.btn-outline-dark:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+/* ========== ЗАГОЛОВКИ ========== */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* ========== МОДАЛЬНЫЕ ОКНА ========== */
+.modal-content {
+  border-radius: 15px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-body img {
+  border-radius: 10px;
+  max-height: 280px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ========== ОТСТУПЫ И ВЫРАВНИВАНИЕ ========== */
+section {
+  scroll-margin-top: 100px; /* плавный переход при навигации */
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #555;
+}

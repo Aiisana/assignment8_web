@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Douce — Меню</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style_menu.css">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Maison Douce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Меню</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="menu-banner position-relative">
+    <img src="хед.png" alt="Maison Douce Menu" class="menu-banner-img">
+    <div class="menu-banner-content">
+      <div class="container">
+        <h1 class="fw-bold display-5">Наши коллекции</h1>
+        <p class="lead mt-3">Искусство изысканных десертов Maison Douce — сочетание вкуса, стиля и вдохновения.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Макаронсы -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Макаронсы</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="мак1.png" class="card-img-top" alt="Blueberry Macaron">
+            <div class="card-body text-center">
+              <h5>Blueberry Macaron</h5>
+              <p class="text-muted">Миндальное тесто, черничный крем, лёгкая сладость лета.</p>
+              <p class="fw-bold">₸850</p>
+              <button class="btn btn-outline-dark"
+                data-title="Blueberry Macaron"
+                data-image="мак1.png"
+                data-description="Хрустящие миндальные половинки с кремом из свежей черники.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Blueberry Macaron', 850, 'мак1.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="мак2.png" class="card-img-top" alt="Pistachio Macaron">
+            <div class="card-body text-center">
+              <h5>Pistachio Macaron</h5>
+              <p class="text-muted">Фисташковый крем с ореховыми нотками и сливочной текстурой.</p>
+              <p class="fw-bold">₸900</p>
+              <button class="btn btn-outline-dark"
+                data-title="Pistachio Macaron"
+                data-image="мак2.png"
+                data-description="Фисташковый крем и ореховая нотка — вкус весеннего Прованса.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Pistachio Macaron', 900, 'мак2.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="мак3.png" class="card-img-top" alt="Chocolate Macaron">
+            <div class="card-body text-center">
+              <h5>Chocolate Macaron</h5>
+              <p class="text-muted">Насыщенный бельгийский шоколад в каждом кусочке.</p>
+              <p class="fw-bold">₸870</p>
+              <button class="btn btn-outline-dark"
+                data-title="Chocolate Macaron"
+                data-image="мак3.png"
+                data-description="Бельгийский шоколад и нежный ганаш для настоящих ценителей.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Chocolate Macaron', 870, 'мак3.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Шоколадные башни -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Шоколадные башни</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="б1.png" class="card-img-top" alt="Velvet Tower">
+            <div class="card-body text-center">
+              <h5>Velvet Tower</h5>
+              <p class="text-muted">Нежный мусс из бельгийского шоколада и карамельного крема.</p>
+              <p class="fw-bold">₸1250</p>
+              <button class="btn btn-outline-dark"
+                data-title="Velvet Tower"
+                data-image="б1.png"
+                data-description="Плотный мусс из бельгийского шоколада с карамельным сердцем.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Velvet Tower', 1250, 'б1.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="б2.png" class="card-img-top" alt="Blue Mousse Tower">
+            <div class="card-body text-center">
+              <h5>Blue Mousse Tower</h5>
+              <p class="text-muted">Три слоя: молочный шоколад, сливочный мусс и малиновое желе.</p>
+              <p class="fw-bold">₸1300</p>
+              <button class="btn btn-outline-dark"
+                data-title="Blue Mousse Tower"
+                data-image="б2.png"
+                data-description="Слоёный десерт с малиновым акцентом и мягким шоколадным муссом.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Blue Mousse Tower', 1300, 'б2.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="б3.png" class="card-img-top" alt="Dark Passion">
+            <div class="card-body text-center">
+              <h5>Dark Passion</h5>
+              <p class="text-muted">Тёмный шоколад, кофейный ганаш и хрустящий слой пралине.</p>
+              <p class="fw-bold">₸1350</p>
+              <button class="btn btn-outline-dark"
+                data-title="Dark Passion"
+                data-image="б3.png"
+                data-description="Контраст горького шоколада и лёгкой кофейной ноты с пралине.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Dark Passion', 1350, 'б3.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Торты -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Торты</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="торт1.png" class="card-img-top" alt="Modern Cube">
+            <div class="card-body text-center">
+              <h5>Modern Cube</h5>
+              <p class="text-muted">Модульный торт в современном стиле с ванильным муссом.</p>
+              <p class="fw-bold">₸1500</p>
+              <button class="btn btn-outline-dark"
+                data-title="Modern Cube"
+                data-image="торт1.png"
+                data-description="Современная геометрия вкуса с мягким ванильным муссом.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Modern Cube', 1500, 'торт1.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="торт2.png" class="card-img-top" alt="Blue Dream">
+            <div class="card-body text-center">
+              <h5>Blue Dream</h5>
+              <p class="text-muted">Муссовый торт с голубикой, йогуртовым кремом и миндальным бисквитом.</p>
+              <p class="fw-bold">₸1600</p>
+              <button class="btn btn-outline-dark"
+                data-title="Blue Dream"
+                data-image="торт2.png"
+                data-description="Муссовый торт с голубикой и сливочной свежестью йогурта.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Blue Dream', 1600, 'торт2.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="торт3.png" class="card-img-top" alt="Vanilla Classic">
+            <div class="card-body text-center">
+              <h5>Vanilla Classic</h5>
+              <p class="text-muted">Традиционный ванильный торт с лёгким сливочным кремом.</p>
+              <p class="fw-bold">₸1350</p>
+              <button class="btn btn-outline-dark"
+                data-title="Vanilla Classic"
+                data-image="торт3.png"
+                data-description="Классическая ваниль и сливочный крем в идеальной гармонии.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Vanilla Classic', 1350, 'торт3.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Кондитерские фрукты -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Кондитерские фрукты</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="ф1.png" class="card-img-top" alt="Citrus Delight">
+            <div class="card-body text-center">
+              <h5>Citrus Delight</h5>
+              <p class="text-muted">Апельсиновый мусс с цедрой и мандариновым гелем внутри.</p>
+              <p class="fw-bold">₸950</p>
+              <button class="btn btn-outline-dark"
+                data-title="Citrus Delight"
+                data-image="ф1.png"
+                data-description="Нежный апельсиновый мусс и освежающий мандариновый центр.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Citrus Delight', 950, 'ф1.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="ф2.png" class="card-img-top" alt="Mango Passion">
+            <div class="card-body text-center">
+              <h5>Mango Passion</h5>
+              <p class="text-muted">Манговый мусс с кокосовым кремом и ванильной основой.</p>
+              <p class="fw-bold">₸980</p>
+              <button class="btn btn-outline-dark"
+                data-title="Mango Passion"
+                data-image="ф2.png"
+                data-description="Тропическое сочетание манго и кокоса на ванильной основе.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Mango Passion', 980, 'ф2.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 shadow-sm">
+            <img src="ф3.png" class="card-img-top" alt="Raspberry Joy">
+            <div class="card-body text-center">
+              <h5>Raspberry Joy</h5>
+              <p class="text-muted">Яркий мусс из малины и лайма с нежным сливочным центром.</p>
+              <p class="fw-bold">₸990</p>
+              <button class="btn btn-outline-dark"
+                data-title="Raspberry Joy"
+                data-image="ф3.png"
+                data-description="Яркая малина с лаймом и сливочным центром — свежесть и баланс.">Подробнее</button>
+              <button class="btn btn-dark ms-2" onclick="addToCart('Raspberry Joy', 990, 'ф3.png')">В корзину</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Единая модалка -->
+  <div class="modal fade" id="detailsModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" alt="" class="img-fluid mb-3">
+          <p id="modalText" class="text-muted"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-white border-top">
+    <p class="mb-0">&copy; 2025 Maison Douce — Искусство кондитерского мастерства</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script_menu.js"></script>
+</body>
+</html>

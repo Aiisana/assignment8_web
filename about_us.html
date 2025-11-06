@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Douce — О нас</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
+
+  <!-- AOS (анимации при скролле) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Наш CSS -->
+  <link rel="stylesheet" href="style_us.css">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Maison Douce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Корзина</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about_us.html">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section class="about-hero d-flex align-items-center justify-content-center text-center text-white">
+  <div class="video-container">
+    <video class="hero-video active" autoplay muted loop playsinline>
+      <source src="видео1.mp4" type="video/mp4">
+    </video>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="видео2.mp4" type="video/mp4">
+    </video>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="видео3.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3" data-aos="fade-up">Maison Douce</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">
+      История вкуса, рожденная во Франции — и ставшая искусством по всему миру.
+    </p>
+  </div>
+</section>
+
+
+  <!-- История -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <img src="пек.png" class="img-fluid rounded shadow-sm hover-zoom" alt="Наша история">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="fw-bold mb-3">Наша история начинается в 1986 году</h2>
+          <p class="text-muted">
+            Всё началось с маленькой пекарни в сердце Парижа. Молодой кондитер с безупречным вкусом и страстью к деталям мечтал 
+            создать место, где сладость становится искусством, а десерт — эмоцией. Так родилась Maison Douce — «Дом нежности».
+          </p>
+          <p class="text-muted">
+            Сегодня Maison Douce — это сеть изысканных кондитерских от Парижа до Токио, от Алматы до Нью-Йорка, 
+            где традиции сочетаются с современным вкусом.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ценности -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center flex-lg-row-reverse">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
+          <img src="цен.png" class="img-fluid rounded shadow-sm hover-zoom" alt="Наши ценности">
+        </div>
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="fw-bold mb-3">Наши ценности</h2>
+          <p class="text-muted">
+            Maison Douce — это не просто десерты. Это уважение к ремеслу, природе и человеку. Мы создаём всё вручную, 
+            отбирая натуральные ингредиенты: ароматное миндальное масло из Прованса, бельгийский шоколад и свежие ягоды.
+          </p>
+          <p class="text-muted">
+            Мы верим, что истинная роскошь — в простоте и честности. Каждый наш десерт — результат сотен проб, 
+            экспериментов и вдохновения. Мы не копируем — мы создаём.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- География -->
+  <section class="py-5 text-center">
+    <div class="container" data-aos="zoom-in">
+      <h2 class="fw-bold mb-4">Maison Douce сегодня</h2>
+      <p class="col-lg-8 mx-auto text-muted mb-5">
+        За почти четыре десятилетия мы открыли бутики в 18 странах мира. 
+        От витрин под Эйфелевой башней до уютных залов на улицах Токио — 
+        в каждом уголке Земли наши десерты сохраняют ту самую энергию и нежность, с которой всё начиналось.  
+      </p>
+      <img src="карта.png" class="img-fluid rounded shadow-sm hover-zoom" alt="Карта наших бутиков">
+    </div>
+  </section>
+
+  <!-- Команда -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <img src="команда.png" class="img-fluid rounded shadow-sm hover-zoom" alt="Наша команда">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h2 class="fw-bold mb-3">Люди Maison Douce</h2>
+          <p class="text-muted">
+            Каждый наш кондитер — это художник. Мы гордимся мастерами, которые соединяют точность науки и вдохновение искусства. 
+            Каждый рецепт проходит путь от творческой идеи до идеальной текстуры и вкуса.  
+          </p>
+          <p class="text-muted">
+            Maison Douce объединяет более 400 человек в 12 странах. Мы — семья, где уважают традиции, поддерживают развитие и вдохновляют на открытие нового.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Анимация чисел -->
+  <section class="py-5 stats text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="stat-number" id="years">0</div>
+          <div class="stat-text">ЛЕТ ИСТОРИИ</div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-number" id="countries">0</div>
+          <div class="stat-text">СТРАН МИРА</div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-number" id="chefs">0</div>
+          <div class="stat-text">МАСТЕРОВ-КОНДИТЕРОВ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Заключение -->
+  <section class="py-5 text-center" data-aos="fade-up">
+    <div class="container">
+      <h3 class="fw-bold mb-3">Maison Douce — искусство, созданное с нежностью</h3>
+      <p class="text-muted col-lg-8 mx-auto">
+        Мы верим, что сладость — это не просто вкус, а состояние души.  
+        Каждое наше изделие — часть большой истории, написанной с любовью и вдохновением.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-white border-top">
+    <p class="mb-0">&copy; 2025 Maison Douce — Искусство кондитерского мастерства</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script_us.js"></script>
+</body>
+</html>
